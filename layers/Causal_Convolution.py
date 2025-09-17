@@ -11,7 +11,6 @@ class Chomp1d(nn.Module):
     def forward(self, x):
         return x[:, :, :-self.chomp_size].contiguous()
 
-
 class CausalConv1d(nn.Module):
 
     def __init__(self,
