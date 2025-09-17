@@ -32,7 +32,7 @@ class CausalConv1d(nn.Module):
             out_channels,
             kernel_size=kernel_size,
             stride=stride,
-            padding=self.padding,  # 先做 padding
+            padding=self.padding,  # padding
             dilation=dilation,
             bias=bias
         ))
